@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Josiah Nyongesa | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: "Times New Roman", Georgia, serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header a {
+      color: #aaddff;
+      text-decoration: none;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    nav button {
+      font-family: Georgia, serif;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background-color: #004466;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #006699;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Josiah Nyongesa</h1>
+    <p>El Paso, TX | (330) 787-5654 | <a href="mailto:bakasajosiah@gmail.com">bakasajosiah@gmail.com</a></p>
+    <p>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('certifications')">Certifications</button>
+    <button onclick="showSection('experience')">Work Experience</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('skills')">Technical Skills</button>
+  </nav>
+
+  <main>
+    <section id="education" class="content-section">
+      <h2>Education</h2>
+      <p><strong>Master of Science, Mathematics with Data Analytics Certificate</strong><br>Youngstown State University, Youngstown, OH | Aug 2021 – Aug 2023</p>
+      <p>Courses: Operations Research, Advance Data Analysis, Econometrics, Data Mining & Warehousing, Data Visualization, Linear Models, Time Series, Database Management</p>
+      <p><strong>Bachelor of Science, Mathematics</strong><br>University of Eastern Africa, Baraton | Aug 2011 – Aug 2016</p>
+      <p>Research: Fast Iterative Methods for Solving Systems of Linear Equations and its Applications</p>
+    </section>
+
+    <section id="certifications" class="content-section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>IBM Data Science Professional Certificate (Nov 2024 – Feb 2025)</li>
+        <li>Certificate in Data Analytics (Youngstown State University)</li>
+        <li>Professional Membership: American Mathematical Society</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="content-section">
+      <h2>Work Experience</h2>
+      <p><strong>Manager I, Operations – Amazon</strong><br>El Paso, TX | Sep 2023 – Present</p>
+      <ul>
+        <li>Led team to record-breaking TPH, demonstrating exceptional efficiency</li>
+        <li>Developed QuickSight BI report for P2R CPT misses; improved delivery performance</li>
+        <li>Proposed Pick to Rebin Wall Adjacency project to optimize packer allocation</li>
+        <li>Mentored PA (L3) who was promoted to L4</li>
+      </ul>
+      <p><strong>Logistics Payments and Data Analyst – One Acre Fund</strong><br>Kakamega, Kenya | Jan 2018 – Aug 2020</p>
+      <ul>
+        <li>Achieved 99% on-time invoice processing</li>
+        <li>Built automated invoice tracker and returns tracker</li>
+        <li>Forecasting models for budgeting using time series</li>
+        <li>Mentored data entry staff who transitioned to permanent roles</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <p><strong>SpaceX Falcon 9 First Stage Landing Prediction (IBM)</strong><br>Feb 2025</p>
+      <ul>
+        <li>Applied ML models to predict SpaceX launch outcomes</li>
+        <li>Built interactive dashboard using Plotly Dash</li>
+        <li>Presented findings via PowerPoint</li>
+      </ul>
+      <p><strong>Supply Chain Optimization – Deep Roots Self Care Co.</strong><br>Jan 2023 – Jun 2023</p>
+      <ul>
+        <li>Created juice rotation strategy – 13% revenue growth</li>
+        <li>Developed demand forecasting models</li>
+        <li>Optimized delivery routes</li>
+      </ul>
+      <p><strong>Pilot Project – Titanic Survival Prediction</strong><br>Jan 2023 – May 2023</p>
+      <ul>
+        <li>Built predictive model using Random Forest</li>
+        <li>Analyzed survival factors with EDA and feature importance</li>
+      </ul>
+      <p><strong>YSU Student Financial Literacy Survey</strong><br>Jan 2022 – May 2022</p>
+      <ul>
+        <li>Created Tableau & Power BI dashboards</li>
+        <li>Conducted regression & hypothesis testing</li>
+        <li>Recommended strategies to improve financial literacy at YSU</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="content-section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Data Modeling & Optimization</li>
+        <li>Advanced Statistical Analysis</li>
+        <li>Machine Learning</li>
+        <li>Data Visualization & Reporting</li>
+        <li>Cross-Functional Collaboration</li>
+        <li>Decision Support Systems</li>
+        <li>Tools: Python, R, SQL, STATA, Tableau, Power BI, Excel/VBA, MATLAB, SPSS, Amazon QuickSight</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll(".content-section");
+      sections.forEach(section => section.style.display = "none");
+      const selected = document.getElementById(id);
+      if (selected) {
+        selected.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
+
