@@ -62,10 +62,25 @@
     .content-section {
       display: none;
     }
+
+    .back-btn {
+      display: block;
+      margin: 2rem auto 1rem;
+      padding: 0.6rem 1rem;
+      background-color: #004466;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: #006699;
+    }
   </style>
 </head>
 <body>
-  <header>
+  <header id="home-header">
     <h1>Josiah Nyongesa</h1>
     <p>El Paso, TX | (330) 787-5654 | <a href="mailto:bakasajosiah@gmail.com">bakasajosiah@gmail.com</a></p>
     <p>
@@ -74,7 +89,7 @@
     </p>
   </header>
 
-  <nav>
+  <nav id="home-nav">
     <button onclick="showSection('education')">Education</button>
     <button onclick="showSection('certifications')">Certifications</button>
     <button onclick="showSection('experience')">Work Experience</button>
@@ -89,16 +104,18 @@
       <p>Courses: Operations Research, Advance Data Analysis, Econometrics, Data Mining & Warehousing, Data Visualization, Linear Models, Time Series, Database Management</p>
       <p><strong>Bachelor of Science, Mathematics</strong><br>University of Eastern Africa, Baraton | Aug 2011 – Aug 2016</p>
       <p>Research: Fast Iterative Methods for Solving Systems of Linear Equations and its Applications</p>
+      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
     </section>
 
     <section id="certifications" class="content-section">
       <h2>Certifications</h2>
       <ul>
-        <li>Amazon Full Stack Web Development (In Progress) </li>
-        <li>IBM Data Science Professional Certificate </li>
+        <li>Amazon Full Stack Web Development (In Progress)</li>
+        <li>IBM Data Science Professional Certificate</li>
         <li>Certificate in Data Analytics (Youngstown State University)</li>
         <li>Professional Membership: American Mathematical Society</li>
       </ul>
+      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
     </section>
 
     <section id="experience" class="content-section">
@@ -117,6 +134,7 @@
         <li>Forecasting models for budgeting using time series</li>
         <li>Mentored data entry staff who transitioned to permanent roles</li>
       </ul>
+      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
     </section>
 
     <section id="projects" class="content-section">
@@ -144,6 +162,7 @@
         <li>Conducted regression & hypothesis testing</li>
         <li>Recommended strategies to improve financial literacy at YSU</li>
       </ul>
+      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
     </section>
 
     <section id="skills" class="content-section">
@@ -154,9 +173,10 @@
         <li>Machine Learning</li>
         <li>Data Visualization & Reporting</li>
         <li>Cross-Functional Collaboration</li>
-        <li>Web Development</li>
+        <li>Web Development (<a href="file:///Users/josiahnyongesa/Trip/index.html" target="_blank">Reference Project</a>)</li> <!-- NEW LINK -->
         <li>Tools: Python, R, SQL, STATA, Tableau, Power BI, Excel/VBA, HTML, CSS, JavaScript, Amazon QuickSight</li>
       </ul>
+      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
     </section>
   </main>
 
@@ -168,8 +188,18 @@
       if (selected) {
         selected.style.display = "block";
       }
+      document.getElementById('home-header').style.display = 'none'; // Hide home header
+      document.getElementById('home-nav').style.display = 'none';    // Hide home nav
+    }
+
+    function goHome() {
+      const sections = document.querySelectorAll(".content-section");
+      sections.forEach(section => section.style.display = "none");
+      document.getElementById('home-header').style.display = 'block'; // Show home header
+      document.getElementById('home-nav').style.display = 'block';    // Show home nav
     }
   </script>
 </body>
 </html>
+
 
