@@ -12,6 +12,9 @@
       color: #333;
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -51,6 +54,7 @@
     }
 
     main {
+      flex: 1;
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
@@ -82,6 +86,14 @@
 
     .back-btn:hover {
       background-color: #006699;
+    }
+
+    footer {
+      background-color: #004466;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -189,12 +201,16 @@
         <li>Machine Learning</li>
         <li>Data Visualization and Reporting</li>
         <li>Cross-Functional Collaboration</li>
-        <li>Web Development </li>
+        <li>Web Development (<a href="file:///Users/josiahnyongesa/Trip/index.html" target="_blank">Reference Project</a>)</li>
         <li>Tools: Python, R, SQL, STATA, Tableau, Power BI, Excel/VBA, HTML, CSS, JavaScript, Amazon QuickSight</li>
       </ul>
       <button class="back-btn" onclick="showSection('home-content')">← Back to Home</button>
     </section>
   </main>
+
+  <footer>
+    © 2025 Josiah Nyongesa
+  </footer>
 
   <script>
     function showSection(id) {
@@ -208,6 +224,7 @@
   </script>
 </body>
 </html>
+
 
 
 
