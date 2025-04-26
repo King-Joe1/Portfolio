@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: "Times New Roman", Georgia, serif;
-      background-color: #f4f4f4;
+      background-color: #d9f0ff; /* Light blue background */
       color: #333;
       margin: 0;
       padding: 0;
@@ -63,6 +63,12 @@
       display: none;
     }
 
+    #home-content {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+    }
+
     .back-btn {
       display: block;
       margin: 2rem auto 1rem;
@@ -79,8 +85,9 @@
     }
   </style>
 </head>
+
 <body>
-  <header id="home-header">
+  <header>
     <h1>Josiah Nyongesa</h1>
     <p>El Paso, TX | (330) 787-5654 | <a href="mailto:bakasajosiah@gmail.com">bakasajosiah@gmail.com</a></p>
     <p>
@@ -89,7 +96,8 @@
     </p>
   </header>
 
-  <nav id="home-nav">
+  <nav>
+    <button onclick="showSection('home-content')">Home</button>
     <button onclick="showSection('education')">Education</button>
     <button onclick="showSection('certifications')">Certifications</button>
     <button onclick="showSection('experience')">Work Experience</button>
@@ -98,13 +106,18 @@
   </nav>
 
   <main>
+    <section id="home-content" class="content-section">
+      <h2>About Me</h2>
+      <p>Hello! I'm Josiah Nyongesa, a passionate professional with a deep interest in Operations Research, Data Science, and a growing excitement for Software Development Engineering. I thrive on solving complex problems, building smart solutions, and exploring how technology can make life and business better. I'm always eager to learn, innovate, and bring ideas to life through data and code.</p>
+    </section>
+
     <section id="education" class="content-section">
       <h2>Education</h2>
       <p><strong>Master of Science, Mathematics with Data Analytics Certificate</strong><br>Youngstown State University, Youngstown, OH | Aug 2021 – Aug 2023</p>
-      <p>Courses: Operations Research, Advance Data Analysis, Econometrics, Data Mining & Warehousing, Data Visualization, Linear Models, Time Series, Database Management</p>
+      <p>Courses: Operations Research, Advanced Data Analysis, Econometrics, Data Mining & Warehousing, Data Visualization, Linear Models, Time Series, Database Management</p>
       <p><strong>Bachelor of Science, Mathematics</strong><br>University of Eastern Africa, Baraton | Aug 2011 – Aug 2016</p>
       <p>Research: Fast Iterative Methods for Solving Systems of Linear Equations and its Applications</p>
-      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
+      <button class="back-btn" onclick="showSection('home-content')">← Back to Home</button>
     </section>
 
     <section id="certifications" class="content-section">
@@ -115,68 +128,71 @@
         <li>Certificate in Data Analytics (Youngstown State University)</li>
         <li>Professional Membership: American Mathematical Society</li>
       </ul>
-      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
+      <button class="back-btn" onclick="showSection('home-content')">← Back to Home</button>
     </section>
 
     <section id="experience" class="content-section">
       <h2>Work Experience</h2>
       <p><strong>Manager I, Operations – Amazon</strong><br>El Paso, TX | Sep 2023 – Present</p>
       <ul>
-        <li>Led team to record-breaking TPH, demonstrating exceptional efficiency</li>
-        <li>Developed QuickSight BI report for P2R CPT misses; improved delivery performance</li>
-        <li>Proposed Pick to Rebin Wall Adjacency project to optimize packer allocation</li>
-        <li>Mentored PA (L3) who was promoted to L4</li>
+        <li>Led a team to record-breaking throughput rates (TPH), driving efficiency improvements.</li>
+        <li>Developed QuickSight BI reports to reduce P2R CPT misses and improve delivery performance.</li>
+        <li>Initiated Pick to Rebin Wall Adjacency project to optimize packer allocations.</li>
+        <li>Mentored a PA (Level 3) who earned a promotion to Level 4.</li>
       </ul>
+
       <p><strong>Logistics Payments and Data Analyst – One Acre Fund</strong><br>Kakamega, Kenya | Jan 2018 – Aug 2020</p>
       <ul>
-        <li>Achieved 99% on-time invoice processing</li>
-        <li>Built automated invoice tracker and returns tracker</li>
-        <li>Forecasting models for budgeting using time series</li>
-        <li>Mentored data entry staff who transitioned to permanent roles</li>
+        <li>Maintained 99% on-time invoice processing across departments.</li>
+        <li>Built automated invoice and returns tracking systems.</li>
+        <li>Created time-series forecasting models to support annual budgeting efforts.</li>
+        <li>Mentored entry-level staff who transitioned into permanent analyst roles.</li>
       </ul>
-      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
+      <button class="back-btn" onclick="showSection('home-content')">← Back to Home</button>
     </section>
 
     <section id="projects" class="content-section">
       <h2>Projects</h2>
       <p><strong>SpaceX Falcon 9 First Stage Landing Prediction (IBM)</strong><br>Feb 2025</p>
       <ul>
-        <li>Applied ML models to predict SpaceX launch outcomes</li>
-        <li>Built interactive dashboard using Plotly Dash</li>
-        <li>Presented findings via PowerPoint</li>
+        <li>Applied machine learning models to predict SpaceX launch outcomes.</li>
+        <li>Designed and built an interactive dashboard using Plotly Dash.</li>
+        <li>Presented key findings through a PowerPoint presentation to peers.</li>
       </ul>
+
       <p><strong>Supply Chain Optimization – Deep Roots Self Care Co.</strong><br>Jan 2023 – Jun 2023</p>
       <ul>
-        <li>Created juice rotation strategy – 13% revenue growth</li>
-        <li>Developed demand forecasting models</li>
-        <li>Optimized delivery routes</li>
+        <li>Developed a product rotation strategy leading to a 13% revenue growth.</li>
+        <li>Built demand forecasting models and optimized last-mile delivery routes.</li>
       </ul>
+
       <p><strong>Pilot Project – Titanic Survival Prediction</strong><br>Jan 2023 – May 2023</p>
       <ul>
-        <li>Built predictive model using Random Forest</li>
-        <li>Analyzed survival factors with EDA and feature importance</li>
+        <li>Built predictive survival models using Random Forest classifiers.</li>
+        <li>Explored key survival factors through exploratory data analysis (EDA).</li>
       </ul>
+
       <p><strong>YSU Student Financial Literacy Survey</strong><br>Jan 2022 – May 2022</p>
       <ul>
-        <li>Created Tableau & Power BI dashboards</li>
-        <li>Conducted regression & hypothesis testing</li>
-        <li>Recommended strategies to improve financial literacy at YSU</li>
+        <li>Built Tableau and Power BI dashboards from survey data.</li>
+        <li>Performed regression analysis and hypothesis testing.</li>
+        <li>Recommended strategies to enhance financial literacy at Youngstown State University.</li>
       </ul>
-      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
+      <button class="back-btn" onclick="showSection('home-content')">← Back to Home</button>
     </section>
 
     <section id="skills" class="content-section">
       <h2>Technical Skills</h2>
       <ul>
-        <li>Data Modeling & Optimization</li>
+        <li>Data Modeling and Optimization</li>
         <li>Advanced Statistical Analysis</li>
         <li>Machine Learning</li>
-        <li>Data Visualization & Reporting</li>
+        <li>Data Visualization and Reporting</li>
         <li>Cross-Functional Collaboration</li>
-        <li>Web Development (<a href="file:///Users/josiahnyongesa/Trip/index.html" target="_blank">Reference Project</a>)</li> <!-- NEW LINK -->
+        <li>Web Development (<a href="file:///Users/josiahnyongesa/Trip/index.html" target="_blank">Reference Project</a>)</li>
         <li>Tools: Python, R, SQL, STATA, Tableau, Power BI, Excel/VBA, HTML, CSS, JavaScript, Amazon QuickSight</li>
       </ul>
-      <button class="back-btn" onclick="goHome()">← Back to Home</button> <!-- NEW -->
+      <button class="back-btn" onclick="showSection('home-content')">← Back to Home</button>
     </section>
   </main>
 
@@ -188,18 +204,10 @@
       if (selected) {
         selected.style.display = "block";
       }
-      document.getElementById('home-header').style.display = 'none'; // Hide home header
-      document.getElementById('home-nav').style.display = 'none';    // Hide home nav
-    }
-
-    function goHome() {
-      const sections = document.querySelectorAll(".content-section");
-      sections.forEach(section => section.style.display = "none");
-      document.getElementById('home-header').style.display = 'block'; // Show home header
-      document.getElementById('home-nav').style.display = 'block';    // Show home nav
     }
   </script>
 </body>
 </html>
+
 
 
