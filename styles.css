@@ -1,0 +1,56 @@
+/* Overall page background */
+html {
+    background: #a9a9a9; /* gray */
+  }
+  
+  /* Body section styling */
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f0f0f0; /* light gray */
+    color: #333;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Header and footer */
+  header, footer {
+    background: #add8e6; /* light blue */
+    color: #003366;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Main content spacing */
+  main {
+    padding: 1rem;
+  }
+  
+  /* Section headings */
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+  }
+  
+  /* Link styling */
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section spacing */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  /* List padding */
+  ul {
+    padding-left: 20px;
+  }
+  
