@@ -1,40 +1,48 @@
-/* Full-page background */
+/* Make sure the HTML and body fill the screen */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #a9a9a9; /* Overall background gray */
+  color: #333;
+  overflow-y: auto;
 }
 
-/* Center the content area */
+/* Use Flexbox to center the CV layout horizontally */
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: Georgia, "Times New Roman", serif;
-  background: #a9a9a9; /* gray background */
+  align-items: flex-start;
 }
 
-/* Main container styling */
+/* Container for the entire CV content */
 .container {
-  background: #f0f0f0; /* light gray */
-  color: #333;
+  background-color: #f0f0f0; /* Light gray content area */
   max-width: 900px;
   width: 95%;
+  margin: 2rem 0;
   padding: 2rem;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 }
 
-/* Header and footer */
+/* Header and footer styling */
 header, footer {
-  background: #add8e6; /* light blue */
+  background-color: #add8e6; /* Light blue */
   color: #003366;
   text-align: center;
   padding: 1rem;
-  margin: -2rem -2rem 2rem -2rem; /* pulls full width inside container */
+  margin-bottom: 2rem;
 }
 
-/* Main content area */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #002244;
+}
+
 main {
   padding: 1rem 0;
 }
@@ -43,9 +51,17 @@ main {
 h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: #003366;
 }
 
-/* Link styling */
+/* Project sub-headings */
+h3 {
+  margin-top: 1rem;
+  color: #004080;
+}
+
+/* Anchor (link) styling */
 a {
   color: #0056b3;
   text-decoration: none;
@@ -63,4 +79,5 @@ section {
 /* List styling */
 ul {
   padding-left: 20px;
+  margin-top: 0.5rem;
 }
