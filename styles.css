@@ -1,36 +1,36 @@
-/* Make sure the HTML and body fill the screen */
+/* Full page layout */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background-color: #a9a9a9; /* Overall background gray */
+  background-color: #a9a9a9;
   color: #333;
   overflow-y: auto;
 }
 
-/* Use Flexbox to center the CV layout horizontally */
+/* Flexbox centering */
 body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-/* Container for the entire CV content */
+/* Central container for the CV */
 .container {
-  background-color: #f0f0f0; /* Light gray content area */
+  background-color: #f0f0f0;
   max-width: 900px;
   width: 95%;
-  margin: 2rem 0;
   padding: 2rem;
+  margin: 2rem 0;
   border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
-/* Header and footer styling */
+/* Header and footer */
 header, footer {
-  background-color: #add8e6; /* Light blue */
+  background-color: #add8e6;
   color: #003366;
   text-align: center;
   padding: 1rem;
@@ -43,8 +43,13 @@ header h1 {
   color: #002244;
 }
 
+/* Main content styling */
 main {
   padding: 1rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 /* Section headings */
@@ -55,13 +60,18 @@ h2 {
   color: #003366;
 }
 
-/* Project sub-headings */
 h3 {
   margin-top: 1rem;
   color: #004080;
 }
 
-/* Anchor (link) styling */
+/* List styling */
+ul {
+  padding-left: 20px;
+  margin-top: 0.5rem;
+}
+
+/* Links */
 a {
   color: #0056b3;
   text-decoration: none;
@@ -71,13 +81,3 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Section spacing */
-section {
-  margin-bottom: 2rem;
-}
-
-/* List styling */
-ul {
-  padding-left: 20px;
-  margin-top: 0.5rem;
-}
