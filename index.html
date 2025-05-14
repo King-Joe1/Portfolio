@@ -2,75 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Josiah Nyongesa | CV</title>
-  <style>
-    /* Full-page background */
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Center the content area */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #a9a9a9; /* gray background */
-    }
-
-    /* Main container styling */
-    .container {
-      background: #f0f0f0; /* light gray */
-      color: #333;
-      max-width: 900px;
-      width: 95%;
-      padding: 2rem;
-      border: 1px solid #ccc;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    /* Header and footer */
-    header, footer {
-      background: #add8e6; /* light blue */
-      color: #003366;
-      text-align: center;
-      padding: 1rem;
-      margin: -2rem -2rem 2rem -2rem;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    main {
-      padding: 1rem 0;
-    }
-
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3rem;
-    }
-
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
@@ -78,8 +12,7 @@
       <h1>Josiah Nyongesa</h1>
       <p>El Paso TX ● 330 787 5654 ● <a href="mailto:bakasajosiah@gmail.com">bakasajosiah@gmail.com</a></p>
       <p>
-        <a href="https://www.linkedin.com/in/josiah-nyongesa-bakasa/">My Linkedin Link</a> •
-        <a href="https://github.com/King-Joe1">My Github Link</a>
+        <a href="#">My Linkedin Link</a> • <a href="#">My Github Link</a>
       </p>
     </header>
 
@@ -90,26 +23,28 @@
         Youngstown State University, OH | Aug 2021 – Aug 2023</p>
         <p>Relevant Coursework: Time Series Analysis, Econometrics, Data Mining, Statistical Modeling, Database Systems, Optimization, Operations Research</p>
         <ul>
-          <li>Focused on applying advanced probability, machine learning, and time series methods to real-world decision-making problems</li>
+          <li>Applied advanced probability, machine learning, and time series methods to real-world decision-making problems</li>
           <li>Developed multiple research projects involving predictive modeling, optimization, and data-driven analysis</li>
         </ul>
       </section>
 
       <section>
         <h2>Professional Experience</h2>
-        <p><strong>Manager I, Operations – Amazon</strong><br>El Paso, TX | Sep 2023 – Present</p>
+        <h3>Manager I, Operations – Amazon</h3>
+        <p>El Paso, TX | Sep 2023 – Present</p>
         <ul>
-          <li>Developed QuickSight BI report to track P2R CPT misses, analyzed root causes, and implemented action plans, improving on-time delivery performance.</li>
-          <li>Collaborated with team members to achieve record-breaking TPH (units processed per hour) in the fulfillment center, driving exceptional operational efficiency and productivity.</li>
-          <li>Proposed a Pick to Rebin Wall Adjacency Project to optimize packer allocation and improve warehouse efficiency through intelligent automation.</li>
-          <li>Mentored an L3 Process Assistant, supporting their promotion to L4 through guided project ownership and problem-solving.</li>
+          <li>Developed QuickSight BI report to track P2R CPT misses and implemented corrective actions</li>
+          <li>Achieved record-breaking TPH in the fulfillment center through operational efficiency</li>
+          <li>Proposed automation projects to optimize packer allocation</li>
+          <li>Mentored junior staff toward promotion by fostering problem-solving ownership</li>
         </ul>
 
-        <p><strong>Logistics Payments and Data Analyst – One Acre Fund</strong><br>Kakamega, Kenya | Jan 2018 – Aug 2020</p>
+        <h3>Logistics Payments and Data Analyst – One Acre Fund</h3>
+        <p>Kakamega, Kenya | Jan 2018 – Aug 2020</p>
         <ul>
-          <li>Built time series forecasting models to support seasonal budget planning and resource optimization.</li>
-          <li>Designed and implemented automated trackers for invoice validation, improving payment accuracy and reducing delays.</li>
-          <li>Conducted root-cause analysis and built SQL-based reporting tools to improve financial accountability in logistics.</li>
+          <li>Built time series forecasting models to guide seasonal planning</li>
+          <li>Designed automated invoice validation trackers improving accuracy</li>
+          <li>Used SQL to create tools for financial accountability</li>
         </ul>
       </section>
 
@@ -117,23 +52,20 @@
         <h2>Data Science Projects</h2>
         <h3>SpaceX Launch Success Prediction | IBM Data Science Capstone</h3>
         <ul>
-          <li>Developed machine learning models (Random Forest, Logistic Regression) to predict SpaceX Falcon 9 first stage landing outcomes.</li>
-          <li>Created a dynamic dashboard for visualizing model predictions, supporting real-time data exploration and model performance tracking.</li>
-          <li>Integrated statistical techniques and algorithmic thinking to drive decision support for aerospace operations.</li>
+          <li>Used Random Forest and Logistic Regression to predict Falcon 9 landings</li>
+          <li>Developed dashboards with Plotly Dash for real-time performance visualization</li>
         </ul>
 
         <h3>Titanic Survival Prediction – Binary Classification Model</h3>
         <ul>
-          <li>Conducted in-depth statistical analysis and applied classification algorithms (Random Forest, Gradient Boosting) on survival data.</li>
-          <li>Performed feature engineering and selection to improve predictive power of survival models.</li>
-          <li>Translated modeling output into actionable insights through probability estimation and ROC curve evaluation.</li>
+          <li>Applied Scikit-learn for classification (Random Forest, Gradient Boosting)</li>
+          <li>Performed feature engineering and evaluated with ROC curve</li>
         </ul>
 
         <h3>Deep Roots Self Care Co. – Supply Chain Optimization</h3>
         <ul>
-          <li>Built a time-series based demand forecasting model to optimize production cycles and inventory levels.</li>
-          <li>Developed an optimization algorithm to minimize delivery route costs, leading to measurable improvements in delivery times.</li>
-          <li>Modeled customer demand volatility and integrated forecasting into operational decision-making.</li>
+          <li>Built forecasting models using R, Python, and Power BI</li>
+          <li>Optimized delivery routes using cost minimization algorithms</li>
         </ul>
       </section>
 
@@ -141,12 +73,12 @@
         <h2>Technical Skills</h2>
         <ul>
           <li><strong>Programming:</strong> Python, R, SQL, Java, HTML, CSS, JavaScript</li>
-          <li><strong>Frameworks & Libraries:</strong> Spring Boot, React, Angular</li>
+          <li><strong>Frameworks & Libraries:</strong> Spring Boot, Angular, React</li>
           <li><strong>Architecture:</strong> MVC Architecture</li>
-          <li><strong>Web Services:</strong> RESTful Services, REST APIs</li>
           <li><strong>Cloud & DevOps:</strong> AWS EC2, S3, Lambda, RDS</li>
+          <li><strong>Web Services:</strong> RESTful Services, REST APIs</li>
           <li><strong>Modeling & Analysis:</strong> Machine Learning, Time Series Forecasting, Predictive Analytics</li>
-          <li><strong>Tools:</strong> Scikit-learn, Tableau, Plotly Dash, Excel/VBA, QuickSight, Jupyter Notebooks, VS Code</li>
+          <li><strong>Tools:</strong> Scikit-learn, Tableau, Plotly Dash, Excel/VBA, QuickSight</li>
           <li><strong>Methods:</strong> Statistical Inference, Feature Engineering, Optimization, Data Mining</li>
         </ul>
       </section>
@@ -154,24 +86,28 @@
       <section>
         <h2>Certifications</h2>
         <ul>
-          <li>IBM Data Science Professional Certificate – <a href="https://coursera.org/share/a7630a27858976f2502a3d7549254851">Certificate Link</a></li>
+          <li>IBM Data Science Professional Certificate – <a href="#">Certificate Link</a></li>
           <li>Full Stack Web Development</li>
           <li>Certificate in Data Analytics – Youngstown State University</li>
         </ul>
       </section>
-
-      <section>
-        <h2>Download CV</h2>
-        <a href="Josiah_Nyongesa_CV.pdf" download>Download PDF</a>
-      </section>
     </main>
 
     <footer>
-      <p>© 2025 Josiah Nyongesa</p>
+      <p>&copy; 2025 Josiah Nyongesa</p>
     </footer>
   </div>
+
+  <script>
+    // Simple scroll animation or interaction placeholder
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', e => {
+        if (link.getAttribute('href') === '#') {
+          e.preventDefault();
+          alert('This is a placeholder link. Replace with your actual URL.');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
