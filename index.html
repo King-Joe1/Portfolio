@@ -11,15 +11,21 @@
       background-color: #e0e0e0;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
     main {
       max-width: 900px;
-      margin: 2rem auto;
+      width: 95%;
       padding: 2rem;
       background-color: #f9f9f9;
       border: 2px solid #ccc;
       border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     header, footer {
@@ -27,6 +33,12 @@
       color: white;
       text-align: center;
       padding: 1rem;
+      width: 100%;
+    }
+
+    header h1 {
+      color: #f5f5f5; /* lighter name text */
+      margin: 0;
     }
 
     header a, footer a {
@@ -148,4 +160,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
